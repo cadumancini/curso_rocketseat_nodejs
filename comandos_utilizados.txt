@@ -1,2 +1,4 @@
 npm init -y
 npm install express
+--------------------
+npm install -D nodemon // para não precisar reiniciar o servidor ao salvar o arquivo js
