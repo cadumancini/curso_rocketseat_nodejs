@@ -2,3 +2,9 @@ npm init -y
 npm install express
 --------------------
 npm install -D nodemon // para não precisar reiniciar o servidor ao salvar o arquivo js
+--------------------
+docker pull mongo
+docker run --name mongodb -p 27017:27017 -d mongo
+docker ps // para saber quais imagens estão rodando
+--------------------
+npm install mongoose // ORM
