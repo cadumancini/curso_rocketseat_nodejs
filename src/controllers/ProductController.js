@@ -6,5 +6,10 @@ module.exports = {
   async index(req, res) {
     const products = await Product.find(); // trazer todos os produtos
     return res.json(products); // API retornando em formato JSON
+  },
+
+  async store(req, res) {
+    const product = await Product.create(req.body);
+    return res.json(product);
   }
 };
