@@ -12,3 +12,4 @@ instalação do Insomnia // auxiliar nas APIs REST
 npm install mongoose // ORM
 npm install require-dir // Para registrar todos os schemas
 npm install mongoose-paginate // para fazer paginação de registros
+npm install cors // para permitir que a api seja acessada externamente

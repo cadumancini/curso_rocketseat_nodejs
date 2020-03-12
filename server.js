@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const requireDir = require('require-dir');
 
 // Iniciando app
 const app = express();
 app.use(express.json()); // Permitir com que envie dados em formato JSON
+app.use(cors()); // pode-se passar parâmetros, como domínios que podem acessar, etc.
 
 // Iniciando o DB
 mongoose.connect('mongodb://localhost:27017/nodeapi', { useUnifiedTopology: true, useNewUrlParser: true });
